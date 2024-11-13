@@ -4,7 +4,7 @@ class Counter:
         self.value = initial_value
 
     def increase(self):
-        self.value = self.value + 1
+        self.value = int(self.value) + 1
 
     def increment(self, amount):
         self.value = self.value + amount
@@ -14,3 +14,6 @@ class Counter:
 
     def reset(self):
         self.value = self._initial_value
+
+    def set_specific_value(self, value):
+        self.value = value
